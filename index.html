@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Подорожі</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* HEADER */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  display: inline;
+  margin: 0 15px;
+}
+
+.menu-item-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-item-link:hover {
+  color: #ff6f61;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-size: cover;
+  color: white;
+}
+
+.hero-info {
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 720px;
+}
+
+.hero-title {
+  font-size: 64px;
+  margin: 0;
+}
+
+.hero-text {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+/* INTRO */
+.intro, .destinations, .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.intro-title,
+.destinations-title,
+.contact-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  background: white;
+  width: 900px;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.card-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.card-title {
+  margin-top: 0;
+  color: #0073e6;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+}
+
+.card-list-item {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* DESTINATIONS */
+.destinations-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.destination {
+  width: 30%;
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.destination:hover {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.destination-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+.form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background: #e55a50;
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="head">
+  <div class="logo">Подорожі</div>
+  <nav class="menu">
+    <ul class="menu-links">
+      <li class="menu-item"><a href="#home" class="menu-item-link">Головна</a></li>
+      <li class="menu-item"><a href="#dest" class="menu-item-link">Напрямки</a></li>
+      <li class="menu-item"><a href="#contact" class="menu-item-link">Контакти</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-info">
+    <h1 class="hero-title">Ласкаво просимо до світу подорожей!</h1>
+    <p class="hero-text">Відкрийте для себе нові місця та враження.</p>
+  </div>
+</section>
+
+<section class="intro">
+  <h2 class="intro-title">Чому обрати нас?</h2>
+
+  <div class="card">
+    <img class="card-img" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+    <div>
+      <h3 class="card-title">Найкращі напрямки</h3>
+      <ul class="card-list">
+        <li class="card-list-item">Екзотичні острови</li>
+        <li class="card-list-item">Історичні міста</li>
+        <li class="card-list-item">Культурні центри</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="destinations" id="dest">
+  <h2 class="destinations-title">Популярні напрямки</h2>
+
+  <div class="destinations-container">
+    <div class="destination">
+      <img class="destination-img" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+      <h3>Париж, Франція</h3>
+      <p>Романтичні прогулянки та історичні пам’ятки.</p>
+    </div>
+
+    <div class="destination">
+      <img class="destination-img" src="https://images.unsplash.com/photo-1534447677768-be436bb09401">
+      <h3>Нью-Йорк, США</h3>
+      <p>Місто, що ніколи не спить.</p>
+    </div>
+
+    <div class="destination">
+      <img class="destination-img" src="https://images.unsplash.com/photo-1549693578-d683be217e58">
+      <h3>Токіо, Японія</h3>
+      <p>Сучасна культура та традиції.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="contact-title">Контакти</h2>
+
+  <form class="form">
+    <label class="form-label">Ім’я</label>
+    <input class="form-input" type="text">
+
+    <label class="form-label">Електронна пошта</label>
+    <input class="form-input" type="email">
+
+    <label class="form-label">Повідомлення</label>
+    <textarea class="form-textarea"></textarea>
+
+    <button class="form-button">Відправити</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2024 Подорожі. Автор: Іванов І.М.</p>
+</footer>
+
+</body>
+</html>
